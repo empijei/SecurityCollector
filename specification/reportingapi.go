@@ -42,10 +42,10 @@ type ReportsList []Report
 //
 // [report]: https://www.w3.org/TR/reporting/#serialize-reports
 type Report struct {
-	// Age is the number of milliseconds between the report’s [timestamp] and the current time according to the user agent.
+	// AgeMilliseconds is the number of milliseconds between the report’s [timestamp] and the current time according to the user agent.
 	//
 	// [timestamp]: https://www.w3.org/TR/reporting/#report-timestamp
-	Age int `json:"timestamp"`
+	AgeMilliseconds int `json:"age"`
 
 	// Type is a [report type].
 	//
